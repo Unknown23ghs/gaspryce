@@ -1,0 +1,560 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f6f6f6;
+}
+
+/* HEADER */
+.headerz {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 70px;
+  background: #d3d3d3;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px #ccc;
+}
+
+/* Header Flex Layout */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+/* Left, Center, Right sections */
+.nav-left, .nav-center, .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Center section tweaks */
+.nav-center {
+  gap: 10px;
+}
+
+/* Membership link alignment */
+.membership {
+  font-size: 20px;
+  color: #b5c518;
+  margin-left: 12px;
+  text-decoration: none;
+  background: none;
+  border: none;
+  align-self: center;
+  padding-top: 2px;
+}
+
+/* Remove underline from all icons/links */
+.nav-right a, .nav-left a {
+  text-decoration: none;
+}
+
+/* Icon alignment and spacing */
+.notifications, .cart, .logouticon {
+  width: 28px;
+  height: 28px;
+  margin: 0 28px; /* Increased from 18px to 28px */
+  vertical-align: middle;
+}
+
+/* Log out button styling */
+.logoutbutton {
+  margin-left: 18px;
+  font-size: 16px;
+  padding: 7px 14px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* Remove blue underline from images inside links */
+a img {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Menu button bold and centered */
+.menuboarder {
+  border: 2px solid black;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 6px;
+}
+
+.menuword {
+  font-size: 33px;
+  color: #1D0E0E;
+  margin: 0;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.searchbox {
+  width: 300px;
+  height: 34px;
+  font-size: 18px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  padding-left: 8px;
+}
+
+.searchpic {
+  width: 50px;
+    height: 50px;
+}
+
+.membership {
+  font-size: 20px;
+  color: #b5c518;
+  margin-left: 20px;
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+.notifications, .cart, .logouticon {
+  width: 34px;
+  margin-left: 15px;
+}
+
+.logoutbutton {
+  margin-left: auto;
+  font-size: 17px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* MAIN LAYOUT */
+main {
+  padding-top: 90px; /* Space for fixed header */
+}
+
+/* HERO/BANNER */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0 20px 0;
+}
+
+.LPGbordersign {
+  background: linear-gradient(90deg, #ff6b6b 0%, #ff8c42 50%, #ff9f1c 80%, #ff6f00 100%);
+  border-radius: 28px;
+  box-shadow: 0 6px 24px 0 #e6510055;
+  width: 95vw;
+  max-width: 1400px;
+  min-height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr 1fr;
+  align-items: center;
+  width: 100%;
+  gap: 24px;
+  padding: 24px 32px;
+}
+
+/* SOCIAL CARD LEFT */
+.banner-social-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: -12px 0 32px 0 #ff6b6b44;
+  padding: 24px 24px 18px 24px;
+  min-width: 300px;
+  max-width: 340px;
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.banner-social-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ff6b6b;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+  font-family: 'Georgia', serif;
+}
+
+.banner-social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.banner-social-link {
+  font-size: 18px;
+  color: #444;
+  background: #f6f6f6;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-weight: 500;
+  width: 100%;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  box-shadow: none;
+  border: none;
+}
+
+/* TITLE CENTER */
+.banner-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #7a1a1a;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #fff8;
+  font-family: 'Georgia', serif;
+}
+
+/* CYLINDER IMAGE RIGHT */
+.banner-cylinder {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cylinderlogo {
+  width: 140px;
+  height: 200px;
+  margin-left: 16px;
+}
+
+/* --- PRODUCT SECTION --- */
+.products-section {
+  max-width: 1300px;
+  margin: 40px auto 0 auto;
+  padding: 32px 16px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #eee;
+}
+
+.products-section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ff6b6b;
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: 1px;
+  font-family: 'Georgia', serif;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 16px 20px 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  min-height: 420px;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 32px #ffb26b55;
+  transform: translateY(-8px) scale(1.03);
+  border-color: #ff9f1c;
+}
+
+.product-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 16px;
+  transition: transform 0.2s;
+  border-radius: 10px;
+  background: #f6f6f6;
+  box-shadow: 0 2px 8px #eee;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.08);
+}
+
+.product-info {
+  text-align: center;
+  width: 100%;
+}
+
+.product-title {
+  font-size: 1.3rem;
+  margin: 0 0 8px 0;
+  color: #7a1a1a;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.item-price {
+  font-size: 1.1rem;
+  color: #ff6b6b;
+  font-weight: bold;
+  margin: 0 0 8px 0;
+}
+
+.product-desc {
+  font-size: 15px;
+  color: #444;
+  margin: 0 0 16px 0;
+  min-height: 40px;
+}
+
+.add-to-cart {
+  background: linear-gradient(90deg, #ff6b6b, #ff9f1c);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #eee;
+  margin-top: 12px;
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(90deg, #ff9f1c, #ff6b6b);
+  box-shadow: 0 4px 16px #ffb26b;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background: #f8f8f8;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0 0 30px;
+}
+
+.followuson {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.allpicture {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.logo1, .logo2, .logo3 {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo1:hover, .logo2:hover, .logo3:hover {
+  transform: scale(1.1);
+}
+
+.message, .FAQ, .about {
+  display: inline-block;
+  margin: 10px 20px;
+  color: #666;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.message:hover, .FAQ:hover, .about:hover {
+  color: #ff6b6b;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .LPGbordersign {
+    width: 98vw;
+    max-width: 100vw;
+  }
+  .banner-grid {
+    gap: 10px;
+    padding: 16px 8px;
+  }
+  .banner-social-card {
+    min-width: 180px;
+    max-width: 95vw;
+    padding: 16px 10px 12px 10px;
+  }
+  .banner-title h1 {
+    font-size: 2rem;
+  }
+  .cylinderlogo {
+    width: 80px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 12px 4px;
+  }
+  .banner-title, .banner-cylinder, .banner-social-card {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .banner-title h1 {
+    font-size: 1.3rem;
+  }
+  .cylinderlogo {
+    margin-left: 0;
+    width: 60px;
+    height: 90px;
+  }
+  .products-section {
+    padding: 16px 2vw;
+  }
+  .products-grid {
+    gap: 16px;
+  }
+  .product-card {
+    min-height: 360px;
+    padding: 16px 8px 16px 8px;
+  }
+  .product-img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .products-section-title {
+    font-size: 2rem;
+  }
+
+  .product-title {
+    font-size: 1.2rem;
+  }
+
+  .item-price {
+    font-size: 1.3rem;
+  }
+
+  .allpicture {
+    gap: 20px;
+  }
+
+  .message, .FAQ, .about {
+    display: block;
+    margin: 15px 0;
+  }
+}
+.main-nav {
+    width: 100%;
+    background: linear-gradient(90deg, #ff6b6b 0%, #ff9f1c 100%);
+    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items to edges */
+    gap: 2rem;
+    box-shadow: 0 2px 8px #eee;
+    margin-bottom: 0;
+    border-radius: 0 0 18px 18px;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+}
+
+.main-nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #ffb26b22;
+}
+
+.main-nav a:hover, .main-nav a:focus {
+    background: #fff7f0;
+    color: #ff6b6b;
+    box-shadow: 0 2px 8px #ffb26b55;
+}
+
+.nav-icon {
+    font-size: 1.3em;
+    vertical-align: middle;
+}
+
+@media (max-width: 700px) {
+    .main-nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+        font-size: 0.95rem;
+    }
+    .main-nav a {
+        padding: 8px 10px;
+        font-size: 1rem;
+    }
+}
